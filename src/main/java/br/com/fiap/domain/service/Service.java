@@ -1,7 +1,10 @@
 package br.com.fiap.domain.service;
 
+import org.jvnet.hk2.annotations.Contract;
+
 import java.util.List;
 
+@Contract
 public interface Service<T, U> {
 
     public List<T> findAll();

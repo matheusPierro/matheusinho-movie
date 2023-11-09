@@ -21,7 +21,7 @@ public class Main {
 
     public static final String BASE_URI = "http://localhost/api/";
 
-    public static final String PERSISTENCE_UNIT = "maria-db";
+    public static final String PERSISTENCE_UNIT = "oracle-fiap";
 
     @PersistenceContext
     static EntityManager manager;
@@ -60,7 +60,7 @@ public class Main {
 
     public static void main(String[] args) {
         final HttpServer server = startServer();
-        System.out.printf("App Benezinho Movie 🍿 🤓👍 started with endpoints /available as %s%nHit Ctrl-C to stop it....%n", BASE_URI + "hello");
+        System.out.printf("App Matheusinho Movie 🍿 🤓👍 started with endpoints /available as %s%nHit Ctrl-C to stop it....%n", BASE_URI + "hello");
         try {
             System.in.read();
             server.stop();
